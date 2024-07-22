@@ -1,0 +1,298 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/sky-background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    font-family: 'Tangerine', cursive;
+    font-size: 7rem;
+    color: #f9f9f9;
+    filter: drop-shadow(3px 3px 5px #FFF200);
+    margin-bottom: 0px ;
+}
+.astext {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.homeBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+#homeTitle{
+    font-family: 'lato', sans-serif;
+    color: #FFF200;
+    font-size: 22pt;
+    font-weight: bold; 
+    font-style: italic; 
+}
+.searchBar{
+    border-radius: 25px;
+    border: 0;
+    padding: 10px 20px;
+    width: 500px;
+    height: 50px ;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Noto Serif", serif;
+}
+.searchBar:hover, .searchBar:focus {
+    border: 3px solid #FFF200;
+    outline: #FFF200;
+    filter: drop-shadow(0px 0px 8px #FFF200);
+}
+.cityBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.cityTitle{
+    font-family: 'lato', sans-serif;
+    color: #FFF200;
+    font-size: 22pt;
+    font-weight: bold; 
+    font-style: italic; 
+    filter: drop-shadow(3px 3px 5px #f9f9f9);
+}
+.cityInfo{
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.tempDiv{
+    grid-row: span 2;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tempDiv:hover, .tempDiv:focus {
+        border: 3px solid #f9f9f9;
+        outline: #f9f9f9;
+        filter: drop-shadow(0px 0px 8px #f9f9f9);
+}
+
+.flexInnerTempDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flexInnerTempDiv > h3{
+    font-family: 'lato', sans-serif;
+    font-size: 22pt;
+    color: #303841;
+    margin-bottom: 10px;
+}
+.flexInnerTempDiv > p{
+    font-family: 'lato', sans-serif;
+    font-size: 50pt;
+    color: #303841;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.regularDataDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.regularDataDiv > h3{
+    font-family: 'lato', sans-serif;
+    font-size: 12pt;
+    color: #303841;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.regularDataDiv > p {
+    font-family: 'lato', sans-serif;
+    font-size: 16pt;
+    color: #303841;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.windDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.windDiv h3{
+    font-family: 'lato', sans-serif;
+    font-size: 12pt;
+    color: #303841;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.windDiv p{
+    font-family: 'lato', sans-serif;
+    font-size: 16pt;
+    color: #303841;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.windDiv img{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+}
+.cityInfo > div{
+    background-image: linear-gradient(to bottom right, #d6e6f2d4, #fff200a3); 
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-family: 'lato', sans-serif;
+    color: #f9f9f9;
+    font-size: 14pt; 
+    font-style: italic; 
+}
+
+@media (max-width: 450px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/sky-background.avif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+    #title{
+        font-family: 'Tangerine', cursive;
+        font-size: 4rem;
+        color: #f9f9f9;
+        filter: drop-shadow(3px 3px 5px #FFF200);
+        margin-bottom: 0px ;
+    }
+    #homeTitle{
+        font-family: 'lato', sans-serif;
+        color: #FFF200;
+        font-size: 16pt;
+        font-weight: bold; 
+        font-style: italic; 
+    }
+    .searchBar{
+        border-radius: 25px;
+        border: 0;
+        padding: 10px 20px;
+        width: 350px;
+        height: 50px ;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Noto Serif", serif;
+    }
+    .cityTitle{
+        font-family: 'lato', sans-serif;
+        color: #FFF200;
+        font-size: 20pt;
+        font-weight: bold; 
+        font-style: italic; 
+        filter: drop-shadow(3px 3px 5px #f9f9f9);
+    }
+    .cityInfo{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    .flexInnerTempDiv > h3{
+        font-family: 'lato', sans-serif;
+        font-size: 22pt;
+        color: #303841;
+        margin-bottom: 10px;
+    }
+    .flexInnerTempDiv > p{
+        font-family: 'lato', sans-serif;
+        font-size: 40pt;
+        color: #303841;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .tempDiv{
+        grid-row: span 2;
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .regularDataDiv > h3{
+        font-family: 'lato', sans-serif;
+        font-size: 16pt;
+        color: #303841;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .regularDataDiv > p {
+        font-family: 'lato', sans-serif;
+        font-size: 18pt;
+        color: #303841;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .windDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding: 10px;
+        grid-row-start: 4;
+        grid-column: span 2;
+        padding-left: 30px;
+    }
+    .windDiv h3{
+        font-family: 'lato', sans-serif;
+        font-size: 16pt;
+        color: #303841;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .windDiv p{
+        font-family: 'lato', sans-serif;
+        font-size: 20pt;
+        color: #303841;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .windDiv img{
+        margin-left: auto;
+        margin-right: 20px;
+        width: 80px;
+        height: 50px;
+    }
+    footer p{
+        font-family: 'lato', sans-serif;
+        color: #f9f9f9;
+        font-size: 10pt; 
+        font-style: italic; 
+    }
+}

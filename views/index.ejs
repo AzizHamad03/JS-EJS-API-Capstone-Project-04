@@ -1,0 +1,8 @@
+<%- include('partials/header.ejs') %>
+<div class="homeBody">
+    <h2 id="homeTitle">Search for your city to check its weather</h2>
+    <form action="/cityWeather" method="post">
+        <input type="search" class="searchBar" name="city">
+    </form>
+</div>
+<%- include('partials/footer.ejs') %>
