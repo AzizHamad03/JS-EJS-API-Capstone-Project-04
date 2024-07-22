@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 
 const app = express();
 const port = 3000;
-
+const apiKey = process.env.apiKey;
 const API_URL = "https://api.weatherbit.io/v2.0/current?";
 
 app.use(bodyParser.urlencoded({ extended: true }));
